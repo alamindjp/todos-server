@@ -11,6 +11,7 @@ app.use(cors());
 app.use(express.json())
 
 const uri = `mongodb+srv://${process.env.Db_USER}:${process.env.Db_PASS}@cluster0.5oyor.mongodb.net/?retryWrites=true&w=majority`;
+console.log(uri)
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 async function run() {
