@@ -50,5 +50,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`ToDo New app listening on port ${port}`);
+    console.log(`ToDo app listening on port ${port}`);
 });
